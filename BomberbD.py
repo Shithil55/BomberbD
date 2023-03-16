@@ -45,8 +45,7 @@ cyan  = "\033[96m"
 end = '\033[0m'
  
 purple="\033[0;35m"
- 
-logo=(green+""" 
+  
  
  
 logo=(green+"""     _____ _    _ _____ _______ _    _ _____ _      
@@ -141,6 +140,8 @@ for i in range (amount):
 	print(str(i+1)+green+'.	➙SMS Sent 😈✅')
 	
 print('					')
-print(cyan+'\t\tThanks For Using RedBomber Bangladesh By Redwiat - RedHunter Team')
+print(cyan+'\t\tThanks For Using BomberbD
+
+ Bangladesh By Shithil Ahmed ')
  
  
